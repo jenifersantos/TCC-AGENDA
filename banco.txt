@@ -1,0 +1,11 @@
+create database cadastro_usuarios;
+use cadastro_usuarios;
+create table usuarioA (id_usuario int not null primary key auto_increment, user_name varchar(7), senha varchar(7));
+insert into usuarioA(user_name, senha) values ('flaviof','1234567');
+select * from usuarioA;
+
+create table noticias (id_noticia int not null primary key auto_increment, titulo varchar(100), noticia text, data_criacao timestamp default current_timestamp, resumo varchar(100), autor varchar(30), data_noticia date);
+insert into noticias (titulo, noticia, resumo, autor, data_noticia) values ("Primeira notícia", "O portal foi lançado", "A primeira notícia foi lançada com sucesso", "Flávio Félix Medeiros", "04/10/19");
+select * from noticias;
+ 
+
